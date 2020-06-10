@@ -13,13 +13,13 @@ var timer = function(){
 
 var onVisibilityChange = function(){
     if (!document[hiddenProperty]) {    
-        console.log('页面激活');
+        // console.log('页面激活');
         if(timing===null){
             timing = setInterval(timer,1000);
         }
         
     }else{
-        console.log('页面非激活');
+        // console.log('页面非激活');
         if(timing!==null){
             clearInterval(timing);
             timing=null;
